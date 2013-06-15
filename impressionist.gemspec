@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.authors       = ['johnmcaliley']
 
   s.files         = `git ls-files`.split('\n')
-  s.test_files    = `git ls-files -- test/**/*`.split('\n')
+  s.test_files    = `git ls-files -- test/{spec,test_app/spec}/*`.split('\n')
   s.require_path = 'lib'
   s.required_rubygems_version = Gem::Requirement.new('>= 1.3.6') if s.respond_to?(:required_rubygems_version=)
 
